@@ -1,0 +1,1720 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+    
+    
+      
+        <title>Python Level - Beginner - PythonLearn</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/main.css">
+    
+      <link rel="stylesheet" href="../css/vs.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#learn-datatypes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="PythonLearn" class="md-header-nav__button md-logo" aria-label="PythonLearn">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            PythonLearn
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Python Level - Beginner
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href=".." class="md-tabs__link">
+          Home
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" class="md-tabs__link md-tabs__link--active">
+          Python
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../about/" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PythonLearn" class="md-nav__button md-logo" aria-label="PythonLearn">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    PythonLearn
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Home" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../whycode/" class="md-nav__link">
+      Why Code
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Python
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Python" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Python Level - Beginner
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Python Level - Beginner
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learn-datatypes" class="md-nav__link">
+    Learn Datatypes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-and-print" class="md-nav__link">
+    String and Print
+  </a>
+  
+    <nav class="md-nav" aria-label="String and Print">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-basics" class="md-nav__link">
+    #1 Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-adding-string" class="md-nav__link">
+    #2 adding string
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-backslash" class="md-nav__link">
+    #3 Backslash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-backslash-n" class="md-nav__link">
+    #4 Backslash-n
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numbers-and-calculations" class="md-nav__link">
+    Numbers and Calculations
+  </a>
+  
+    <nav class="md-nav" aria-label="Numbers and Calculations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-" class="md-nav__link">
+    #1 (+, -, *, /)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-remainder" class="md-nav__link">
+    #2 Remainder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-str-vs-int" class="md-nav__link">
+    #4 str vs int
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-difference-bettween-and" class="md-nav__link">
+    #5 difference bettween / and //
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-basics_1" class="md-nav__link">
+    #1 Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-setting" class="md-nav__link">
+    #2 setting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-calling-var" class="md-nav__link">
+    #3 Calling Var
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-adding-value" class="md-nav__link">
+    #4 Adding value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-swap" class="md-nav__link">
+    #5 Swap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-setting-multiple-var" class="md-nav__link">
+    #6 Setting multiple var
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-swaping-value" class="md-nav__link">
+    #7 Swaping Value
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math" class="md-nav__link">
+    Math
+  </a>
+  
+    <nav class="md-nav" aria-label="Math">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-rounding" class="md-nav__link">
+    #1 Rounding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-rounding-to-certain-decimal-point" class="md-nav__link">
+    #2 Rounding to certain decimal point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-remainder-vs-module" class="md-nav__link">
+    #3 Remainder vs Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-other-functions" class="md-nav__link">
+    #4 Other Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formating-string" class="md-nav__link">
+    Formating String
+  </a>
+  
+    <nav class="md-nav" aria-label="Formating String">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-basics_2" class="md-nav__link">
+    #1 Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-basics" class="md-nav__link">
+    #2 Basics
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python_2/" class="md-nav__link">
+      Python Level - Intermediate
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="About" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../about/" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learn-datatypes" class="md-nav__link">
+    Learn Datatypes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-and-print" class="md-nav__link">
+    String and Print
+  </a>
+  
+    <nav class="md-nav" aria-label="String and Print">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-basics" class="md-nav__link">
+    #1 Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-adding-string" class="md-nav__link">
+    #2 adding string
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-backslash" class="md-nav__link">
+    #3 Backslash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-backslash-n" class="md-nav__link">
+    #4 Backslash-n
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numbers-and-calculations" class="md-nav__link">
+    Numbers and Calculations
+  </a>
+  
+    <nav class="md-nav" aria-label="Numbers and Calculations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-" class="md-nav__link">
+    #1 (+, -, *, /)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-remainder" class="md-nav__link">
+    #2 Remainder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-str-vs-int" class="md-nav__link">
+    #4 str vs int
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-difference-bettween-and" class="md-nav__link">
+    #5 difference bettween / and //
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-basics_1" class="md-nav__link">
+    #1 Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-setting" class="md-nav__link">
+    #2 setting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-calling-var" class="md-nav__link">
+    #3 Calling Var
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-adding-value" class="md-nav__link">
+    #4 Adding value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-swap" class="md-nav__link">
+    #5 Swap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-setting-multiple-var" class="md-nav__link">
+    #6 Setting multiple var
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-swaping-value" class="md-nav__link">
+    #7 Swaping Value
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math" class="md-nav__link">
+    Math
+  </a>
+  
+    <nav class="md-nav" aria-label="Math">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-rounding" class="md-nav__link">
+    #1 Rounding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-rounding-to-certain-decimal-point" class="md-nav__link">
+    #2 Rounding to certain decimal point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-remainder-vs-module" class="md-nav__link">
+    #3 Remainder vs Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-other-functions" class="md-nav__link">
+    #4 Other Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formating-string" class="md-nav__link">
+    Formating String
+  </a>
+  
+    <nav class="md-nav" aria-label="Formating String">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-basics_2" class="md-nav__link">
+    #1 Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-basics" class="md-nav__link">
+    #2 Basics
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Python Level - Beginner</h1>
+                
+                <h2 id="learn-datatypes">Learn Datatypes</h2>
+<p>There are three <mark>data types</mark> in Python</p>
+<table>
+<thead>
+<tr>
+<th>Types</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int</code></td>
+<td>Int, short for integer. Whole number, any number without decimal point.</td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td>Floating-point numbers with up to 17 decimal points.</td>
+</tr>
+<tr>
+<td><code>str</code></td>
+<td>Str, String, words in general. Written inside quote.</td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td>True or False. Often use as a switch.</td>
+</tr>
+</tbody>
+</table>
+<details class="tip" open="open"><summary>Tip</summary><p>Learn the basics, but don't be scared to explore. </p>
+<p><mark>Coding is all about exploring</mark></p>
+</details>
+<h2 id="string-and-print">String and Print</h2>
+<h3 id="1-basics">#1 Basics</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Is&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Output</strong>
+<div class="highlight"><pre><span></span><code>Hello world
+My
+Name
+Is
+
+Bob
+</code></pre></div></p>
+<details class="note"><summary>Note</summary><p><mark>print()</mark> is used to <ins class="critic">display messages</ins></p>
+</details>
+<h3 id="2-adding-string">#2 adding string</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span> <span class="o">+</span> <span class="s2">&quot; world&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;world&quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Output</strong>
+<div class="highlight"><pre><span></span><code>Hello world
+Hello world
+</code></pre></div></p>
+<details class="note"><summary>Note</summary><p>"," and "+" and combine two string together.</p>
+</details>
+<h3 id="3-backslash">#3 Backslash</h3>
+<p><strong>Code</strong></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, world&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What&#39;s up&quot;</span><span class="p">)</span>
+<span class="hll"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;What</span><span class="se">\&#39;</span><span class="s1">s up&#39;</span><span class="p">)</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>Hello, world
+Hello, world
+What&#39;s up
+What&#39;s up
+\
+</code></pre></div></p>
+<details class="note"><summary>Note</summary><p>Double quote("") and Single quote('') both work.</p>
+<p>Backslash is called an escape character</p>
+</details>
+<h3 id="4-backslash-n">#4 Backslash-n</h3>
+<p><strong>Code</strong></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello,</span><span class="se">\n</span><span class="s2">world&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello,</span><span class="se">\t</span><span class="s1">world&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, </span><span class="se">\b</span><span class="s1">world&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\\\</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>Hello,
+world
+Hello,  world
+Hello,world
+
+
+\\
+</code></pre></div></p>
+<details class="note"><summary>Note</summary><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\n</code></td>
+<td>New line</td>
+</tr>
+<tr>
+<td><code>\t</code></td>
+<td>Tab</td>
+</tr>
+<tr>
+<td><code>\\</code></td>
+<td>Backslash</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>Backspace</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="numbers-and-calculations">Numbers and Calculations</h2>
+<h3 id="1-">#1 (+, -, *, /)</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Output</strong>
+<div class="highlight"><pre><span></span><code>4
+0
+4
+1.0
+1
+</code></pre></div></p>
+<details class="note"><summary>Note</summary><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>Addition</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Subtraction</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Division</td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td>Floor division</td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>Exponentiation</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Modulus</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="2-remainder">#2 Remainder</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="mi">7</span><span class="o">%</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">8</span><span class="o">%</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">10</span><span class="o">%</span><span class="mi">6</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Output</strong>
+<div class="highlight"><pre><span></span><code>1
+2
+4
+</code></pre></div></p>
+<details class="tip" open="open"><summary>Tip</summary><p>Follows the <ins class="critic">PEMDAS</ins> rule.</p>
+<p>1.) <code>P</code>: Parentheses</p>
+<p>2.) <code>E</code>: Exponents</p>
+<p>3.) <code>MD</code>: Multiplication and Division</p>
+<p>4.) <code>AS</code>: Addition and Subtraction</p>
+</details>
+<h3 id="4-str-vs-int">#4 str vs int</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">10.0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;10&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;10.0&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">10.0</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">10.0</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Output</strong>
+<div class="highlight"><pre><span></span><code>&lt;class &#39;float&#39;&gt;
+&lt;class &#39;int&#39;&gt;
+&lt;class &#39;str&#39;&gt;
+&lt;class &#39;str&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+</code></pre></div></p>
+<h3 id="5-difference-bettween-and">#5 difference bettween / and //</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">10.0</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">10</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">10.0</span><span class="o">//</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">10</span><span class="o">//</span><span class="mi">3</span><span class="p">))</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Output</strong>
+<div class="highlight"><pre><span></span><code>&lt;class &#39;int&#39;&gt;
+&lt;class &#39;int&#39;&gt;
+&lt;class &#39;int&#39;&gt;
+&lt;class &#39;int&#39;&gt;
+</code></pre></div></p>
+<h2 id="variables">Variables</h2>
+<p><mark>So first of all, what are variables?</mark></p>
+<p>Variable is a memory location to store datas.
+Think of variable as a box, and you can put any thing inside the box. You can later on call certain data by using the variable you created. Variable is a great tool to make your code look more simple.</p>
+<h3 id="1-basics_1">#1 Basics</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;10&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Output</strong>
+<div class="highlight"><pre><span></span><code>10
+10
+</code></pre></div></p>
+<details class="tip" open="open"><summary>Tip</summary><p>Good variable name is important while working in a team. Always get in a good habits of using good variable name.</p>
+<p>A good variable name needs to follow the following:
+* Clear and Concise
+* No special character
+* No conflict with Python fuctions(sum, print, True...)</p>
+</details>
+<h3 id="2-setting">#2 setting</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Output</strong>
+<div class="highlight"><pre><span></span><code>10
+100
+</code></pre></div></p>
+<h3 id="3-calling-var">#3 Calling Var</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Output</strong>
+<div class="highlight"><pre><span></span><code>30
+</code></pre></div></p>
+<h3 id="4-adding-value">#4 Adding value</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">+=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>20
+20
+</code></pre></div></p>
+<details class="note"><summary>Note</summary><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+=</code></td>
+<td>Addition</td>
+</tr>
+<tr>
+<td><code>-=</code></td>
+<td>Subtraction</td>
+</tr>
+<tr>
+<td><code>*=</code></td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td><code>/=</code></td>
+<td>Division</td>
+</tr>
+<tr>
+<td><code>//=</code></td>
+<td>Floor division</td>
+</tr>
+<tr>
+<td><code>**=</code></td>
+<td>Exponentiation</td>
+</tr>
+<tr>
+<td><code>%=</code></td>
+<td>Modulus</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="5-swap">#5 Swap</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;apple&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;pineapple&quot;</span>
+
+<span class="hll"><span class="n">temp</span> <span class="o">=</span> <span class="n">b</span>
+</span><span class="hll"><span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+</span><span class="hll"><span class="n">a</span> <span class="o">=</span> <span class="n">temp</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>a pineapple
+b apple
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="../jpg/python_1_swap.jpg" /></p>
+<details class="note"><summary>Note</summary><p>the variable <code>temp</code> are used as a transition block. </p>
+</details>
+<h3 id="6-setting-multiple-var">#6 Setting multiple var</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span>
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="hll"><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</span></code></pre></div>
+</td></tr></table></p>
+<p><strong>*Output</strong>
+<div class="highlight"><pre><span></span><code>a &lt;class &#39;int&#39;&gt;
+b &lt;class &#39;int&#39;&gt;
+</code></pre></div></p>
+<h3 id="7-swaping-value">#7 Swaping Value</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>a 2
+b 1
+</code></pre></div></p>
+<h2 id="math">Math</h2>
+<h3 id="1-rounding">#1 Rounding</h3>
+<details class="important"><summary>Important</summary><p>The <code>import</code> function is to </p>
+<p>This rounding method only treats number that ends with x.5.
+* Even: round down
+* Odd: round down</p>
+</details>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">10.5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">9.5</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------&quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>10
+10
+------------
+10
+9
+------------
+11
+10
+------------
+</code></pre></div></p>
+<details class="note"><summary>Note</summary><p><mark>Banker's rounding</mark></p>
+<p>This rounding method only treats number that ends with x.5.
+* Even: round down
+* Odd: round down</p>
+</details>
+<h3 id="2-rounding-to-certain-decimal-point">#2 Rounding to certain decimal point</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="n">divider</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="o">*</span><span class="mi">30</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">6.494949494949494949</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">divider</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;round to int&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;round to 2 decimal point&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;round to 4 decimal point&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;round to 6 decimal point&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">divider</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;round up&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">divider</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;round down&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>------------------------------
+round to int 7
+round to 2 decimal point 7.49
+round to 4 decimal point 7.4934
+round to 6 decimal point 7.4934
+------------------------------
+round up 8
+------------------------------
+round down 7
+</code></pre></div></p>
+<h3 id="3-remainder-vs-module">#3 Remainder vs Module</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------------&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------------&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">7</span> <span class="o">%</span> <span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span> <span class="o">%</span> <span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">))</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>1
+1.0
+
+2
+-1.0
+
+-2
+1.0
+
+-1
+-1.0
+</code></pre></div></p>
+<h3 id="4-other-functions">#4 Other Functions</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------------&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------------&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">7</span> <span class="o">%</span> <span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span> <span class="o">%</span> <span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">))</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>1
+1.0
+
+2
+-1.0
+
+-2
+1.0
+
+-1
+-1.0
+</code></pre></div></p>
+<details class="important" open="open"><summary>Important</summary><p>% and math.remainder is different when one of the number are negative.</p>
+<p><mark>x//y = math.floor(x/y)</mark> </p>
+<details class="abstract" open="open"><summary>Abstract</summary><p>math.sqrt(a) = a ** 0.5</p>
+<p>pow(a,b) = a ** b</p>
+</details>
+</details>
+<h2 id="formating-string">Formating String</h2>
+<h3 id="1-basics_2">#1 Basics</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> + </span><span class="si">%s</span><span class="s1"> = </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> + </span><span class="si">{}</span><span class="s1"> = </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{2}</span><span class="s1"> + </span><span class="si">{1}</span><span class="s1"> = </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1"> + </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>10 + 9 = 19
+10 + 9 = 19
+10 + 9 = 19
+10 + 9 = 19
+10 + 9 = 19
+</code></pre></div></p>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>You can not combine String and Int together by using (+), but (,) will work.
+Code:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1&quot;</span> <span class="o">+</span> <span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+Output: 
+<div class="highlight"><pre><span></span><code>TypeError
+1 1
+11
+2
+</code></pre></div></p>
+</div>
+<h3 id="2-basics">#2 Basics</h3>
+<p><strong>Code</strong>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> + </span><span class="si">%s</span><span class="s1"> = </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> + </span><span class="si">{}</span><span class="s1"> = </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{2}</span><span class="s1"> + </span><span class="si">{1}</span><span class="s1"> = </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1"> + </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>Output</strong>
+<div class="highlight"><pre><span></span><code>10 + 9 = 19
+10 + 9 = 19
+10 + 9 = 19
+10 + 9 = 19
+10 + 9 = 19
+</code></pre></div></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>useage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title()</td>
+<td>Capitalize first letter of all word</td>
+</tr>
+<tr>
+<td>capitalize()</td>
+<td>Capitalize first letter of first word</td>
+</tr>
+<tr>
+<td>upper()</td>
+<td>Capitalize all</td>
+</tr>
+<tr>
+<td>lower()</td>
+<td>Lower all</td>
+</tr>
+<tr>
+<td>center(arg)</td>
+<td>text locat center of arg(int)</td>
+</tr>
+<tr>
+<td>ljust(arg)</td>
+<td>text ajust to the left of arg(int)</td>
+</tr>
+<tr>
+<td>rjust(arg)</td>
+<td>text ajust to the right of arg(int)</td>
+</tr>
+<tr>
+<td>split(arg)</td>
+<td>split str to list by arg(str)</td>
+</tr>
+<tr>
+<td>rsplit(arg)</td>
+<td>split str to list by arg(str) from right</td>
+</tr>
+<tr>
+<td>join(arg)</td>
+<td>join list to String by arg</td>
+</tr>
+<tr>
+<td>count(arg)</td>
+<td>count how many times arg(String) appear in String</td>
+</tr>
+<tr>
+<td>zfill()</td>
+<td>依指定字元寬度補0</td>
+</tr>
+<tr>
+<td>strip()</td>
+<td>兩邊移除指定字元</td>
+</tr>
+<tr>
+<td>lstrip()</td>
+<td>左邊移除指定字元</td>
+</tr>
+<tr>
+<td>rstrip()</td>
+<td>右邊移除指定字元</td>
+</tr>
+<tr>
+<td>index()</td>
+<td>尋找指定字串，回傳索引。找不到則回傳 ValueError</td>
+</tr>
+<tr>
+<td>rindex()</td>
+<td>尋找指定字串，回傳索引 (從右先找)</td>
+</tr>
+<tr>
+<td>find()</td>
+<td>尋找指定字串，回傳索引。找不到則回傳 -1</td>
+</tr>
+<tr>
+<td>rfind()</td>
+<td>尋找指定字串，回傳索引 (從右先找)</td>
+</tr>
+<tr>
+<td>replace()</td>
+<td>取代指定字串</td>
+</tr>
+<tr>
+<td>splitlines()</td>
+<td>依換行字元切割字串</td>
+</tr>
+<tr>
+<td>startswith()</td>
+<td>判斷是否以指定字串開頭</td>
+</tr>
+<tr>
+<td>endswith()</td>
+<td>判斷是否以指定字串結尾</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../whycode/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Why Code
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../python_2/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Python Level - Intermediate
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../js/highlight.min.js"></script>
+      
+        <script src="../js/config.js"></script>
+      
+    
+  </body>
+</html>
